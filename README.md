@@ -18,6 +18,25 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
+## Local DB
+
+To run a local PostgreSQL database for development:
+
+```bash
+docker-compose up -d
+```
+
+This will start PostgreSQL 16 with:
+- User: `app`
+- Password: `app`
+- Database: `marketplace`
+- Port: `5433`
+
+To stop the database:
+```bash
+docker-compose down
+```
+
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
 ## Learn More
